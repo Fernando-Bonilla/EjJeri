@@ -30,6 +30,25 @@ namespace EjercicioJeringozo
             
             return new string(resultado.ToArray());
         }
+
+        public static string DesencriptarTexto(string texto)
+        {
+            char[] vocales = { 'a', 'á', 'e', 'é', 'i', 'í', 'o', 'ó', 'u', 'ú' };
+            List<char> resultado = new List<char>();            
+
+            for (int i = 0; i < texto.Length; i++)
+            {
+                resultado.Add(texto[i]);
+
+                if (vocales.Contains(texto[i]))
+                {
+                    i += 2;
+                }
+            }
+
+            return new string(resultado.ToArray());
+
+        }
     }
 }
 
