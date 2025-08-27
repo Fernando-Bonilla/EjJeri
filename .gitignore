@@ -1,0 +1,16 @@
+# Carpetas de VS / .NET
+.vs/
+bin/
+obj/
+
+# Archivos de usuario de VS
+*.user
+*.suo
+
+# Build results
+*.exe
+*.dll
+*.pdb
+
+# Configuración temporal
+*.cache
